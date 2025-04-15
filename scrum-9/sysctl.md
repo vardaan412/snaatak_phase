@@ -1,7 +1,30 @@
 # SOP: Managing Kernel Parameters using sysctl (Performance & Security Tuning)
 
+| Created     | Version | Author         | Comment | Reviewer |
+|-------------|---------|----------------|---------|----------|
+| 14-04-2025  | V1      | Vardaan Saxena |         | Pritam   |
+
 ## 📌 Objective
 This SOP provides a step-by-step guide to **view, apply, and persist kernel parameter changes** using `sysctl` for system performance optimization and security hardening.
+
+---
+
+## 📚 Table of Contents
+
+1. [What is sysctl?](#-what-is-sysctl)
+2. [View Current Kernel Parameters](#-1-view-current-kernel-parameters)
+3. [Temporary Changes (Until Reboot)](#-2-temporary-changes-until-reboot)
+4. [Persisting Changes (After Reboot)](#-3-persisting-changes-after-reboot)
+5. [Common Parameters for Tuning](#-4-common-parameters-for-tuning)
+    - [Security Tuning](#-security-tuning-examples)
+    - [Performance Tuning](#-performance-tuning-examples)
+6. [Verify Changes](#-5-verify-changes)
+7. [Best Practices](#-6-best-practices)
+8. [Rollback Tips](#-7-rollback-tips)
+9. [References](#-references)
+10. [Contacts](#-contacts)
+
+---
 
 ## 📖 What is sysctl?
 `sysctl` is a powerful utility on Linux systems used to **view and modify kernel parameters** at runtime. It allows dynamic tuning of various system behaviors related to networking, memory, process limits, etc.
@@ -108,5 +131,8 @@ sudo sysctl -w <parameter_name>=<old_value>
 - [Red Hat Performance Tuning Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/performance_tuning_guide/)
 - [Kernel.org Documentation](https://www.kernel.org/doc/Documentation/sysctl/)
 
-## ✨ Author
-This SOP was prepared as part of the **Snaatak Phase** of the *MyGurukulam DevOps Ninja* program.
+## 📇 Contacts
+
+| Name           | Email Address                                 |
+|----------------|-----------------------------------------------|
+| Vardaan Saxena | vardaan.saxena.snaatak@mygurukulam.co         |
