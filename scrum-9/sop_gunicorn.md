@@ -6,32 +6,34 @@
 
 ---
 
+
 ## 📚 Table of Contents
 
-1. [Intro](#-intro)  
-2. [Why Gunicorn?](#-why-gunicorn)  
-3. [What is Gunicorn?](#-what-is-gunicorn)  
-4. [Pre-requisites](#-1-pre-requisites)  
-5. [Install Gunicorn](#-2-install-gunicorn)  
-6. [Run Gunicorn with a Sample App](#-3-run-gunicorn-with-a-sample-app)  
-7. [Create a Gunicorn Systemd Service](#-4-create-a-gunicorn-systemd-service)  
-8. [Start and Enable the Service](#-5-start-and-enable-the-service)  
-9. [Verify the Setup](#-6-verify-the-setup)  
-10. [Best Practices](#-7-best-practices)  
-11. [Troubleshooting](#-8-troubleshooting)  
-12. [References](#-references)  
-13. [Contacts](#-contacts)  
- 
+1. [Intro](#intro)  
+2. [Why Gunicorn?](#why-gunicorn)  
+3. [What is Gunicorn?](#what-is-gunicorn)  
+4. [Pre-requisites](#pre-requisites)  
+5. [Install Gunicorn](#install-gunicorn)  
+6. [Run Gunicorn with a Sample App](#run-gunicorn-with-a-sample-app)  
+7. [Create a Gunicorn Systemd Service](#create-a-gunicorn-systemd-service)  
+8. [Start and Enable the Service](#start-and-enable-the-service)  
+9. [Verify the Setup](#verify-the-setup)  
+10. [Best Practices](#best-practices)  
+11. [Troubleshooting](#troubleshooting)  
+12. [References](#references)  
+13. [Contacts](#contacts)  
+
+
 
 ---
 
-## 📌 Intro
+## 📌 Intro <a id="intro"></a>
 
 This SOP provides a simple and clear **step-by-step installation guide** for setting up **Gunicorn** to serve Python applications in a production-like environment.
 
 ---
 
-## ❓ Why Gunicorn?
+## ❓ Why Gunicorn? <a id="why-gunicorn"></a>
 
 - Lightweight and easy to use
 - Perfect for serving Flask, Django, and FastAPI apps
@@ -39,13 +41,13 @@ This SOP provides a simple and clear **step-by-step installation guide** for set
 
 ---
 
-## 📖 What is Gunicorn?
+## 📖 What is Gunicorn? <a id="what-is-gunicorn"></a>
 
 Gunicorn (Green Unicorn) is a **Python WSGI HTTP server** that helps run Python web applications over HTTP.
 
 ---
 
-## 🧰 1. Pre-requisites
+## 🧰 1. Pre-requisites <a id="pre-requisites"></a>
 
 Make sure the following are installed:
 
@@ -61,7 +63,7 @@ pip3 install flask
 
 ---
 
-## ⚙️ 2. Install Gunicorn
+## ⚙️ 2. Install Gunicorn <a id="install-gunicorn"></a>
 
 Use pip to install Gunicorn:
 
@@ -77,7 +79,7 @@ gunicorn --version
 
 ---
 
-## 🚀 3. Run Gunicorn with a Sample App
+## 🚀 3. Run Gunicorn with a Sample App <a id="run-gunicorn-with-a-sample-app"></a>
 
 ### Step 1: Create a sample app `app.py`
 
@@ -108,8 +110,7 @@ gunicorn --bind 0.0.0.0:8000 app:app
 
 ---
 
-## 🛠️ 4. Create a Gunicorn Systemd Service
-
+🛠️ 4. Create a Gunicorn Systemd Service <a id="create-a-gunicorn-systemd-service"></a>
 Create the file:
 
 ```bash
@@ -137,8 +138,7 @@ WantedBy=multi-user.target
 
 ---
 
-## 🔁 5. Start and Enable the Service
-
+🔁 5. Start and Enable the Service <a id="start-and-enable-the-service"></a>
 ```bash
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
@@ -148,7 +148,7 @@ sudo systemctl enable gunicorn
 
 ---
 
-## ✅ 6. Verify the Setup
+✅ 6. Verify the Setup <a id="verify-the-setup"></a>
 
 Check service status:
 
@@ -167,7 +167,7 @@ You should see:
 
 ---
 
-## 📋 7. Best Practices
+📋 7. Best Practices <a id="best-practices"></a>
 
 - Use `virtualenv` to isolate your Python environment.
 - Use `--workers` based on CPU cores (usually 2 x core + 1).
@@ -175,7 +175,7 @@ You should see:
 
 ---
 
-## 🧯 8. Troubleshooting
+🧯 8. Troubleshooting <a id="troubleshooting"></a>
 
 - **Permission denied**: Check file ownership and Gunicorn user.
 - **Port already in use**: Use a different port (e.g. 8080).
@@ -186,14 +186,15 @@ You should see:
 
 ---
 
-## 🔗 References
+🔗 References <a id="references"></a>
+
 
 - [Gunicorn Docs](https://docs.gunicorn.org)
 - [Flask Docs](https://flask.palletsprojects.com)
 
 ---
 
-## 📇 Contacts
+📇 Contacts <a id="contacts"></a>
 
 | Name           | Email Address                                 |
 |----------------|-----------------------------------------------|
