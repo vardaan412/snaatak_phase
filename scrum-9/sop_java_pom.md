@@ -1,7 +1,13 @@
-```markdown
+
 # 📘 SOP: Java | SOP's for pom.xml
 
-![image](https://github.com/user-attachments/assets/890340a1-ed5e-4add-bdbb-3c49bd099890) 
+<p align="center">
+  <img src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" alt="Java Logo" width="45%"/>
+</p>
+
+
+
+
 
 | 🗓️ Created     | 🔖 Version | ✍️ Author         | 💬 Comment          | 👀 Reviewer |
 |----------------|------------|------------------|---------------------|-------------|
@@ -206,4 +212,5 @@ mvn test
 ## 🧾 Conclusion <a id="conclusion"></a>
 
 With this SOP, developers can now efficiently set up a Java Maven project, manage dependencies using `pom.xml`, and confidently build/test their applications. Having a strong grip on `pom.xml` ensures scalable and maintainable project structures across teams and environments.
-```
+
+---
