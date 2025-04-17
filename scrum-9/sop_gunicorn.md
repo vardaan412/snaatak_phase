@@ -1,8 +1,10 @@
 # 📘 SOP: Gunicorn Installation Guide
 
+![image](https://github.com/user-attachments/assets/890340a1-ed5e-4add-bdbb-3c49bd099890) 
+
 | 🗓️ Created     | 🔖 Version | ✍️ Author         | 💬 Comment | 👀 Reviewer |
 |----------------|------------|------------------|------------|-------------|
-| 14-04-2025     | V1         | Vardaan Saxena   |            | Pritam      |
+| 16-04-2025     | V1         | Vardaan Saxena   |            | Pritam      |
 
 ---
 
@@ -198,3 +200,4 @@ journalctl -u gunicorn.service
 | 👤 Name           | 📧 Email Address                                |
 |------------------|--------------------------------------------------|
 | Vardaan Saxena   | vardaan.saxena.snaatak@mygurukulam.co           |
+
