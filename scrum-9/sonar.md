@@ -1,7 +1,10 @@
 
 #  SonarQube Documentation
 
-![image](https://raw.githubusercontent.com/SonarSource/sonarqube/master/images/logo.png)
+<div align="center">
+  <img src="https://i0.wp.com/buddy.works/guides/covers/sonarqube/sonarqube-share.png?w=1230&ssl=1" alt="SonarQube Logo" width="50%"/>
+</div>
+
 
 |  Created     |  Version |  Author         |  Comment              |  Reviewer       |
 |--------------|----------|------------------|------------------------|-----------------|
@@ -70,13 +73,17 @@ This document provides a complete overview of **SonarQube**, an open-source plat
 
 ## How SonarQube Works (Workflow) <a id="workflow"></a>
 
-```mermaid
-graph LR
-A[Source Code] --> B[Build Process / Compile]
-B --> C[Static Code Analysis via Sonar Scanner]
-C --> D[SonarQube Server]
-D --> E[Dashboard with Reports & Metrics]
-```
+---
+1. Developer writes and pushes code.
+2. Code goes through build process (Maven/Gradle).
+3. SonarScanner is triggered during build.
+4. Scanner performs static code analysis.
+5. Results are pushed to SonarQube Server.
+6. Developers review issues via the SonarQube dashboard.
+
+---
+
+
 
 - Code is analyzed using **SonarScanner** during build.  
 - Results are pushed to the **SonarQube server**.  
