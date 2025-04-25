@@ -48,7 +48,7 @@ This document provides detailed information about the Attendance Microservices, 
 **For detailed information of system requirements, architecture, flow diagram, and installation steps, please refer to the following resources**
 | Link         | Description         |
 |--------------|------------------------|
-| [Attendance API](https://github.com/avengers-p11/Documentation/blob/main/OT%20MS%20Understanding/Attendance/Attendance%20POC/README.md) |POC of Attendance records and data flow.| 
+| [Attendance API]() |POC of Attendance records and data flow.| 
 
 
 # **Components**
@@ -94,7 +94,6 @@ Redis (**RE**mote **DI**ctionary **S**erver) is good for this project because it
 
 Poetry makes handling Python dependencies super simple and clean. It takes care of all the libraries your project needs, keeps everything in sync across different setups, and even makes it easier to share or deploy the app. For a project like this, it helps maintain a smooth and consistent development flow.
 
-![PostgreSQL Banner](https://repository-images.githubusercontent.com/236298056/b45f9f80-406d-11ea-901d-c513108ecf26)
 
 **Why Poetry Works Well**
 
