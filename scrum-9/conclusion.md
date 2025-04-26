@@ -1,7 +1,7 @@
 
-# Feature of VCS (Conclusion Documentation)
+# **Feature of VCS (Conclusion Documentation)**
 
-## Author
+# **Author**
 
 
 | Created     | Last updated | Version | Author         | Comment | Reviewer |
@@ -9,7 +9,7 @@
 | 26-04-2025  | 26-04-2025 | V1  | Vardaan Saxena |     Internal Review    | Pritam    |
 
 
-## Table Of Content 
+# **Table Of Content**
 - [Introduction](#introduction)
 - [Why we need VCS](#why-we-need-vcs)
 - [Comparison](#comparison)
@@ -18,7 +18,7 @@
 - [Contacts](#contacts)
 
 
-## Introduction 
+# **Introduction**
 
 ### [GitHub](https://github.com/avengers-p11/Documentation/blob/main/VCS%20Design%20%2B%20POC/Features%20of%20VCS/GitHub%20features/README.md)
 - Best for collaborative development with a large, active community.  
@@ -33,12 +33,12 @@
 - Provides an open-source self-hosted option.  
 
 ---
-## Why we need VCS
+# **Why we need VCS**
 We need a Version Control System (VCS) like Git for our project to track changes, manage multiple developers working on the code, and keep everything organized. It allows us to safely make updates without affecting the main codebase, and if something goes wrong, we can easily revert to a previous version. VCS also helps with code reviews, ensures better quality, and integrates with CI/CD tools for automated testing and deployment. Overall, it improves collaboration, makes development smoother, and helps maintain code integrity
 
 ---
 
-## Comparison 
+# **Comparison**
 
 ## VCS Platform Comparison: Bitbucket, GitLab, and GitHub
 
@@ -64,7 +64,7 @@ We need a Version Control System (VCS) like Git for our project to track changes
 
 ---
 
-## Cost 
+# **Cost** 
 GitHub offers competitive pricing with a **free tier for public and private repositories**, making it accessible to individuals and small teams. For enterprises, the pricing aligns with its robust feature set, including GitHub Enterprise with advanced security, compliance, and performance tools.
 
 | Plan                 | GitHub              | GitLab              | Bitbucket           |
@@ -75,7 +75,7 @@ GitHub offers competitive pricing with a **free tier for public and private repo
 
 ---
 
-## Conclusion
+# **Conclusion**
 
 ### Which one is Best?
 GitHub stands out from Bitbucket and GitLab with its unmatched developer community, seamless third-party integrations, and user-friendly interface. Unlike **Bitbucket, which focuses on Atlassian tools**, and **GitLab, which can be overwhelming for smaller teams**, **GitHub provides a balanced, intuitive platform suitable for all project sizes**. In our microservice project, we use GitHub because it offers a lot of features and is easy to understand. GitHub helps us manage individual microservices, and collaborate efficiently, making it the suitable tool for our project.
@@ -92,7 +92,7 @@ GitHub stands out from Bitbucket and GitLab with its unmatched developer communi
 
 
 
-## **References**
+# **References**
 
 | No. | Reference                                                                                         | Description                    |
 |-----|---------------------------------------------------------------------------------------------------|--------------------------------|
