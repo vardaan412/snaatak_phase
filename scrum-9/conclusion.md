@@ -14,8 +14,8 @@
 - [Why we need VCS](#why-we-need-vcs)
 - [Comparison](#comparison)
 - [Conclusion](#conclusion)
-- [References](#references)
 - [Contacts](#contacts)
+- [References](#references)
 
 
 # **Introduction**
@@ -82,7 +82,7 @@ GitHub stands out from Bitbucket and GitLab with its unmatched developer communi
 
 ---
 
-#  **Contact Information**
+#  **Contacts**
 
 
 | **Name**    | **Email address**         |
