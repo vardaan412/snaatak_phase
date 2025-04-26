@@ -129,10 +129,12 @@ Choose the right strategy based on team workflow, project complexity, and releas
 | Vardaan Saxena | vardaan.saxena.snaatak@mygurukulam.co    |
 
 
+
+
 ## References
 
 | Reference Name                  | Link                                                                                     | Description                                                           |
 |----------------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Environment Branching Strategies | [Environment Branching Strategies](https://medium.com/@patrickporto/4-branching-workflows-for-git-30d0aaee7bf) | Article on different environment branching strategies in Git.        |
-| GitLab Flow                      | [GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)                        | Documentation about GitLab Flow, combining feature branching and CI/CD.|
-| GitHub Flow                      | [GitHub Flow](https://guides.github.com/introduction/flow/)                              | Introduction to GitHub Flow, a simple branching model for developers. |
+| Environment Branching Strategies | [Environment Branching Strategies](https://www.atlassian.com/git/tutorials/comparing-workflows) | Overview of environment-based branching in Git.                        |
+| GitLab Flow                      | [GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)                        | GitLab’s branching model for CI/CD.                                  |
+| GitHub Flow                      | [GitHub Flow](https://guides.github.com/introduction/flow/)                              | Simple branching model for GitHub.                                   |
