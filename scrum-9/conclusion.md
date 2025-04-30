@@ -1,5 +1,12 @@
 
+
+
 # **Feature of VCS (Conclusion Documentation)**
+
+
+<div align="center">
+  <img src="https://www.teamsli.de/wp-content/uploads/2020/05/versioncontrolimg.jpg" alt="Ansible Logo" width="40%"/>
+</div>
 
 # **Author**
 
@@ -19,6 +26,8 @@
 
 
 # **Introduction**
+
+In software development, choosing the right Version Control System (VCS) platform is crucial for smooth collaboration, automation, and scalability. Popular platforms like GitHub, Bitbucket, and GitLab offer unique features catering to different project needs. Below is a summary of each platform’s strengths based on our experience.
 
 ### [GitHub](https://github.com/avengers-p11/Documentation/blob/main/VCS%20Design%20%2B%20POC/Features%20of%20VCS/GitHub%20features/README.md)
 - Best for collaborative development with a large, active community.  
@@ -79,8 +88,9 @@ GitHub offers competitive pricing with a **free tier for public and private repo
 
 # **Conclusion**
 
-### Which one is Best?
-GitHub stands out with its large developer community, easy third-party integrations, and user-friendly interface. Unlike Bitbucket (focused on Atlassian tools) and GitLab (complex for smaller teams), GitHub provides a balanced, intuitive platform. For our microservice project, GitHub simplifies managing services and enhances collaboration, making it the best choice.
+### Which one is used in this project?
+For this project, we are using **GitHub** because it offers easy collaboration, simple integration with CI/CD tools, and a user-friendly platform to manage our microservices efficiently.
+
 
 ---
 
