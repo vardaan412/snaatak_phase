@@ -1,12 +1,18 @@
 
+
+
 # Conclusion of Branching Strategies
+
+<div align="center">
+  <img src="https://media-exp1.licdn.com/dms/image/C4E12AQHNx6uEivhvRQ/article-cover_image-shrink_720_1280/0/1650799881501?e=2147483647&v=beta&t=JxPiBo2dgpOfyB0lE6Ao3f363saYofrGBcGSeVZyHhM" alt="Ansible Logo" width="40%"/>
+</div>
 
 # **Author**
 
 
 | Created     | Last updated | Version | Author         | Comment | Reviewer |
 |-------------|-----------|---------|----------------|---------|----------|
-| 26-04-2025  | 26-04-2025 | V1  | Vardaan Saxena |     Internal Review    | Pritam    |
+| 26-04-2025  | 28-04-2025 | V1.1  | Vardaan Saxena |     Internal Review    | Pritam    |
 
 
 ## Table of Contents
@@ -48,7 +54,7 @@ Feature Branch Flow is a straightforward and effective strategy where each new f
 - Ideal for small teams or projects with simple development needs.
 - Once a feature is complete, it is merged back into the main branch.
 
-For more information, refer to the [Feature Branch Flow Documentation](https://github.com/avengers-p11/Documentation/blob/main/VCS%20Design%20%2B%20POC/Branching%20Strategy/Feature%20Branch/README.md).
+For more information, refer to the [Feature Branch Flow Documentation](https://github.com/snaatak-Downtime-Crew/Documentation/blob/SCRUMS-100-Nishkarsh/vcs_design%20%2B%20poc/branching%20strategy/feature%20branch%20flow/README.md).
 
 
 ### Git Flow
@@ -60,7 +66,7 @@ Git Flow is a well-defined branching strategy that introduces multiple branches 
 - Feature branches for new features and hotfix branches for critical fixes.
 - Clear separation between development, testing, and production-ready code.
 
-For more details, refer to the [Git Flow Documentation](https://github.com/avengers-p11/Documentation/tree/main/VCS%20Design%20%2B%20POC/Branching%20Strategy/Git%20Flow).
+For more details, refer to the [Git Flow Documentation]().
 
 ### GitLab Flow
 
@@ -71,7 +77,7 @@ GitLab Flow combines elements from both Feature Branch Flow and Git Flow, with a
 - Simplifies the merge and deployment processes.
 - Supports CI/CD pipelines for streamlined automation.
 
-For more details, refer to the [GitLab Flow Documentation](https://github.com/avengers-p11/Documentation/tree/main/VCS%20Design%20%2B%20POC/Branching%20Strategy/GitLab%20flow).
+For more details, refer to the [GitLab Flow Documentation]().
 
 
 ### Environment Branch Flow
@@ -83,7 +89,7 @@ Environment Branch Flow involves using long-lived branches to represent differen
 - Code promotion flows from less stable to more stable environments.
 - Supports complex deployment scenarios with multiple testing or staging environments.
 
-For more details, refer to the [Environment Branch Flow Documentation](https://github.com/avengers-p11/Documentation/tree/main/VCS%20Design%20%2B%20POC/Branching%20Strategy/Env%20branch%20flow).
+For more details, refer to the [Environment Branch Flow Documentation]().
 
 
 
@@ -117,9 +123,7 @@ Choose a branching strategy based on factors like team size, project complexity,
 
 ## Conclusion
 
-Each branching strategy serves different project needs: Feature Branch Flow is simple, Git Flow is structured for releases, GitLab Flow supports CI/CD, and Environment Branch Flow provides deployment clarity.
-
-Choose the right strategy based on team workflow, project complexity, and release needs. Success lies in consistency, communication, and best practices.
+For this project, we are using the Feature Branch Flow, where each new feature is developed in a dedicated branch. This approach keeps development isolated, making it easier to manage changes, conduct code reviews, and ensure a stable main branch. Once a feature is complete, it is merged back into the main branch.
 
 #  **Contacts**
 
