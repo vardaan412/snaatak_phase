@@ -10,10 +10,10 @@
 -   [Introduction]( #introduction)
 -   [Step-by-Step Setup Guide](#step-by-step-setup-guide)
 
-# ""Introduction""
+# **Introduction**
 
-This **PostgreSQL Installation Guide** is a step-by-step walkthrough to help you successfully install PostgreSQL on your system. Whether you're setting up PostgreSQL on **Ubuntu**, **Windows**, or **Mac**, this guide focuses specifically on installation for **Ubuntu**. Each step includes necessary commands and visual instructions, ensuring that the installation process is as smooth as possible.
 
+This **PostgreSQL Installation Guide** provides a step-by-step process for installing PostgreSQL on **Ubuntu**. It includes the necessary commands and visual instructions to help you set up PostgreSQL smoothly.
 
 ## Step-by-Step Setup Guide 
 
