@@ -1,8 +1,14 @@
+
 #    **Attendance API Documentation**
+
+
+<div align="center">
+  <img src="https://th.bing.com/th/id/R.63da76b44d7b83f701e38cd8f5af90cb?rik=j1X89wVk4PJb4Q&riu=http%3a%2f%2fattendancetimeclock.com%2fcdn%2fshop%2ffiles%2fAttendancetime_time_clock_logo_c4bdf57b-a3bc-4e65-835b-8e99cd5ab1fc.png%3fv%3d1716661528&ehk=uPHyG2ryKv8EW%2by6ZmMR2U49Eim%2fo0lz9R%2feZTvvq%2bI%3d&risl=&pid=ImgRaw&r=0" alt="Ansible Logo" width="40%"/>
+</div>
 
 | Created     | Last updated | Version | Author         | Comment | Reviewer |
 |-------------|-----------|---------|----------------|---------|----------|
-| 25-04-2025  | 25-04-2025 | V1  | Vardaan Saxena |     Internal Review    | Pritam    |
+| 25-04-2025  | 28-04-2025 | V1.1  | Vardaan Saxena |     Internal Review    | Pritam    |
 
 
 
@@ -10,14 +16,11 @@
 
 -   [**Overview**](#overview)
 -   [**Purpose**](#purpose)
--   [**System Requirements**](#related-resources)
--   [**Dependency**](#related-resources)
--   **[Architecture](#related-resources)**
--    [**Flow Diagram**](#related-resources)
 -   **[Components](#components)**
     -   [PostgreSQL](#postgresql)[Redis](#redis)
     -   [Poetry](#poetry)
     -   [Liquibase](#liquibase)
+    -   [Gunicorn](#gunicorn)
 -   [**Conclusion**](#conclusion)
 -   [**Contact Information**](#contact-information)
 -   **[References](#references)**
@@ -38,6 +41,8 @@ This project aims to develop an Attendance API that connects with a **PostgreSQL
 
 4. **Liquibase** – A tool for managing database versioning and schema updates in a structured and reliable way.
 
+5. **Gunicorn** – A Python WSGI HTTP server used to serve the application in production, enabling efficient request handling.
+
 
 # **Purpose**
 
@@ -48,7 +53,7 @@ This document provides detailed information about the Attendance Microservices, 
 **For detailed information of system requirements, architecture, flow diagram, and installation steps, please refer to the following resources**
 | Link         | Description         |
 |--------------|------------------------|
-| [Attendance API]() |POC of Attendance records and data flow.| 
+| [Attendance API](https://github.com/snaatak-Downtime-Crew/Documentation/tree/SCRUMS-76-SHIVANI/ot-ms-understanding/attendance/poc) |POC of Attendance records and data flow.| 
 
 
 # **Components**
@@ -61,47 +66,42 @@ This document provides detailed information about the Attendance Microservices, 
 
 -   [Liquibase](https://docs.liquibase.com/)
 
+-   [Gunicorn](https://gunicorn.org/) 
+
 ## **PostgreSQL**
 
-PostgreSQL is a great choice for managing attendance data because it handles organized data well, ensures the data is safe and correct through ACID (Atomicity, Consistency, Isolation, and Durability), and can grow as your project gets bigger. It also makes it easy to analyze attendance and create reports.
-
-**Why?**
-
- | **Why It's Used**      | **Details**                                                                                              |
-|------------------------|----------------------------------------------------------------------------------------------------------|
-| Relational Database    | PostgreSQL is a free and safe database that keeps your data correct and organized.                        |
-| Handling Attendance    | It works well for storing things like users, dates, and events, and can do complicated searches easily.    |
-| Scalability            | It can grow with your project as more data comes in, making it perfect for big projects.                   |
+PostgreSQL is a great choice for managing attendance data because it handles organized data well, ensures the data is safe and correct through ACID (Atomicity, Consistency, Isolation, and Durability), and can grow as your project gets bigger.
 
 
+**For detailed information, look at this PostgreSQL PoC:**
+
+| Link         | Description         |
+|--------------|---------------------|
+| [PostgreSQL API](https://github.com/snaatak-Downtime-Crew/Documentation/tree/SCRUMS-86-Vardaan/ot-ms-understanding/postgressql/poc) | PostgreSQL POC for attendance data management. |
 
 ## **Redis**
 
-Redis (**RE**mote **DI**ctionary **S**erver) is good for this project because it keeps data in memory, making the app faster by not needing to fetch it from the database every time. It helps quickly manage user sessions and send real-time updates, like when an attendance record is changed. Unlike other databases, Redis is much faster for handling temporary data like sessions or cached records
+Redis speeds up the app by storing data in memory, making it ideal for managing user sessions and real-time updates like attendance changes. It's faster than traditional databases for temporary data.
 
-**Why?**
+**For detailed information, look at this Redis PoC:**
 
-| **Why It's Used**      | **Details**                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| **Caching**            | Stores frequently accessed data, like attendance records, in memory to make the app faster. |
-| **Session Management** | Keeps track of user sessions quickly, so users stay logged in and their actions are stored. |
-| **Real-Time Updates**  | Sends instant updates to users, like notifying them when their attendance record is updated. |
-
+| Link         | Description         |
+|--------------|---------------------|
+| [Redis API](https://github.com/snaatak-Downtime-Crew/Documentation/tree/SCRUMS-84-PRINCE/ot-ms-understanding/redis/poc) | Redis PoC for managing user sessions and real-time attendance updates.|
 
 
 
 ## **Poetry**
 
-Poetry makes handling Python dependencies super simple and clean. It takes care of all the libraries your project needs, keeps everything in sync across different setups, and even makes it easier to share or deploy the app. For a project like this, it helps maintain a smooth and consistent development flow.
+Poetry simplifies managing Python dependencies, ensuring libraries are in sync and making sharing or deploying the app easier, maintaining a smooth development flow.
 
 
-**Why Poetry Works Well**
+**For detailed information, look at this Poetry PoC:**
 
-| **Feature**              | **What It Helps With**                                                                 |
-|--------------------------|----------------------------------------------------------------------------------------|
-| **Clean Dependency Management** | Keeps track of all required Python packages and installs them in an organized way.      |
-| **Easy Project Packaging**     | Simplifies the process of bundling the app so it’s ready to share or deploy.             |
-| **Consistent Environments**    | Makes sure everyone working on the project uses the same versions, avoiding conflicts.    |
+| Link         | Description         |
+|--------------|---------------------|
+| [Poetry API](https://github.com/snaatak-Downtime-Crew/Documentation/blob/prince_scrums_16/common_stack/application/python/poetry/sop/README.md) | Poetry PoC for managing Python dependencies and ensuring consistent development.|
+
 
 
 ## 
@@ -119,9 +119,20 @@ In this Attendance Application, Liquibase is used to handle all database changes
 | **Smooth CI/CD Integration** | Fits well into the deployment pipeline — the database gets updated automatically with each release. |
 
 
+## **Gunicorn**
+ 
+Gunicorn is a Python WSGI HTTP server that serves Python web applications in production. It helps handle multiple requests at once, making web apps faster and more efficient by connecting the app to a web server.
+
+**For detailed information, look at this Gunicorn  PoC:**
+
+| Link         | Description         |
+|--------------|---------------------|
+| [Gunicorn  API](https://github.com/snaatak-Downtime-Crew/Documentation/tree/main/common_stack/application/python/gunicorm/sop) | Gunicorn PoC for serving Python web applications in production. |
+
+
 # **Conclusion**
 
-The Attendance uses PostgreSQL for secure data storage, Redis for fast data access, Liquibase for smooth database updates, and Poetry for managing dependencies. These technologies work together to create a fast, scalable, and reliable system for managing attendance data. The API is designed to be efficient and easy to maintain, making it suitable for real-world use.
+The Attendance uses PostgreSQL for secure data storage, Redis for fast data access, Liquibase for smooth database updates, and Poetry for managing dependencies, and **Gunicorn** for serving the application in production. These technologies work together to create a fast, scalable, and reliable system for managing attendance data. The API is designed to be efficient and easy to maintain, making it suitable for real-world use.
 
 #  **Contact Information**
 
@@ -139,4 +150,4 @@ The Attendance uses PostgreSQL for secure data storage, Redis for fast data acce
 | 1   | 🌐 [PostgreSQL Official Site](https://www.postgresql.org) | Visit official website   |
 | 2   | 🌐 [Redis Official Site](https://redis.io)              | Visit official website   |
 | 3   | 🌐 [Liquibase Official Site](https://www.liquibase.org) | Visit official website   |
-
+| 4   | 🌐 [Gunicorn Official Site](https://gunicorn.org)       | Visit official website   |
