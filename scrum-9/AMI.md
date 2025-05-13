@@ -51,11 +51,13 @@ To perform this POC, you should have:
 - Launch an EC2 instance
 - Connect to EC2 via SSH
 - Install required dependencies and your application
-* Start application and ensure it runs (you can access it via browser or curl depending on setup)
+- Start application and ensure it runs (you can access it via browser or curl depending on setup)
 
 > **NOTE:**  
 > We are using the Attendance API for this setup.  
 > Refer to its [Attendance API official GitHub repository](https://github.com/your-org/attendance-api) for installation and usage instructions.
+
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/1.png)
 
 #  **Step 2: Create Golden AMI**
 
@@ -67,7 +69,13 @@ To perform this POC, you should have:
   * Description (optional)
   * No reboot (optional if you’re okay with running services stopping)
 * Note the AMI ID once it is created
-
+---
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/2.png)
+---
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/3.png)
+---
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/4.png)
+---
 #  **Step 3: Launch New EC2 Using Golden AMI**
 
 * Go to EC2 → AMIs → Select your AMI → Launch Instance
@@ -81,9 +89,13 @@ To perform this POC, you should have:
   * Ready-to-use environment
 
 * Connect via SSH and verify application is up and running
-
-
-
+---
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/5.png)
+---
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/6.png)
+---
+![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/7.png)
+---
 #  **Conclusion**
 
 * Golden AMIs help you avoid repetitive setup steps.
