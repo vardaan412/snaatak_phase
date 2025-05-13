@@ -48,12 +48,14 @@ To perform this POC, you should have:
 
 #  **Step 1: Launch EC2 and Set Up Application**
 
-- Launch an EC2 instance (Amazon Linux 2 preferred)
+- Launch an EC2 instance
 - Connect to EC2 via SSH
 - Install required dependencies and your application
-
-
 * Start application and ensure it runs (you can access it via browser or curl depending on setup)
+
+> **NOTE:**  
+> We are using the Attendance API for this setup.  
+> Refer to its [Attendance API official GitHub repository](https://github.com/your-org/attendance-api) for installation and usage instructions.
 
 #  **Step 2: Create Golden AMI**
 
