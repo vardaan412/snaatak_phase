@@ -1,8 +1,13 @@
-
 #  **POC of AMI**
 
-A Proof of Concept (POC) to demonstrate how to use a Golden AMI for creating pre-configured, production-ready environments with standardized application setup.
+<div align="center">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.MbxexNZdw7lRXyq4o8WoZgHaDJ&pid=Api&P=0&h=180" alt="Ansible Logo" width="40%"/>
+</div>
 
+
+| Created     | Last updated | Version | Author         | Comment | Reviewer |
+|-------------|-----------|---------|----------------|---------|----------|
+| 12-05-2025  | 12-05-2025 | V1.0  | Vardaan Saxena |     Internal Review    | Pritam    |
 
 
 #  **Table of Contents**
