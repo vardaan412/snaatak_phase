@@ -57,77 +57,18 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 ![image]()
 
 
-## **Step 3. Update and Upgrade System Packages**
-
-```
-sudo apt update
-```
-![image]()
+## **Step 3. Update System Packages**
 
 
-```
-sudo apt upgrade -y
-```
-![image]()
 
 ## **Step 4. Java installation**
 
-```
-sudo apt install -y openjdk-17-jdk
-```
-![image](https://github.com/user-attachments/assets/204ef06f-6d5a-40d4-beff-3c765702f5c1)
 
-##  **Step 5. Verify the installed Java version**
-```
-java -version
-```
 
 ## **Step 6. Install and configure PostgreSQL**
 
 
-#### 1. Adding the PostgreSQL repository.
-```
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" /etc/apt/sources.list.d/pgdg.list'
-```
-![image](https://github.com/user-attachments/assets/33ef266f-10e4-4e04-8f69-0bd4f0a71c82)
-
-#### 2. To proceed with installing and configuring PostgreSQL, add the PostgreSQL signing key.
-
-```
-wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
-```
-![image](https://github.com/user-attachments/assets/655cbe26-173d-425c-abed-32fffe288e18)
-
-#### 3. To complete the PostgreSQL setup, proceed by installing PostgreSQL.
-
-```
-sudo apt install postgresql postgresql-contrib -y
-```
-![image](https://github.com/user-attachments/assets/3875f1ec-6e16-48c1-9329-30e824514193)
-
-
-#### 4. Ensure the database server starts automatically upon reboot for seamless operation
-
-```
-sudo systemctl enable postgresql
-```
-![image](https://github.com/user-attachments/assets/c1ec225d-93e3-498f-9c2c-242d1ba0302d)
-
-#### 5. Initiate the database server to begin operations.
-```
-sudo systemctl start postgresql
-```
-
-#### 6. Verify the current status of the database server.
-```
-sudo systemctl status postgresql
-```
-
-#### 7. Switch to the Postgres user account for further configuration.
-```
-sudo -i -u postgres
-```
-![image](https://github.com/user-attachments/assets/40bef5ea-2759-4bf4-97d4-9610a9d8c8ca)
+#### 1. Install the start the Postgresql.
 
 #### 8. Create a new database user to manage the sqube database
 ```
