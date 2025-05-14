@@ -48,16 +48,8 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 
 # **Step-by-step Installation**
 
-## Step 1. First create the instance t2.medium or t3.large.
 
-![image]()
-
-## Step 2. Open the port
-
-![image]()
-
-
-## **Step 3. Update System Packages**
+## **Step 1. Update System Packages**
 
 >
 >  **Update system**  
@@ -65,7 +57,7 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 >
 > 
 
-## **Step 4. Java installation**
+## **Step 2. Java installation**
 
 >
 >  **Java installation**  
@@ -73,7 +65,7 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 >
 > 
 
-## **Step 6. Install and configure PostgreSQL**
+## **Step 3. Install and configure PostgreSQL**
 
 
 #### 1. Install and start the Postgresql.
@@ -84,13 +76,13 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 >
 > 
 
-#### 8. Create a new database user to manage the sqube database
+#### 2. Create a new database user to manage the sqube database
 ```
 createuser sona
 ```
 
 
-#### 9. Log in to the PostgreSQL database to proceed with database operations.
+#### 3. Log in to the PostgreSQL database to proceed with database operations.
 ```
 psql
 ```
@@ -99,13 +91,13 @@ psql
 
 
  
-#### 10. Set a strong password for the “sona” user. Use a password
+#### 4. Set a strong password for the “sona” user. Use a password
 
 ```
 ALTER USER sona WITH ENCRYPTED password 'Sona#123';
 ```
 
-#### 11. Create a sqube database and assign the ownership to the “sona” user.
+#### 5. Create a sqube database and assign the ownership to the “sona” user.
 ```
 CREATE DATABASE sqube OWNER sona;
 ```
@@ -116,7 +108,7 @@ GRANT ALL PRIVILEGES ON DATABASE sqube to sona;
 ```
 ![image](https://github.com/user-attachments/assets/43a19949-613c-48ea-958f-aa41c4e644af)
 
-#### 12. To verify the creation of the database, use the following command
+#### 6. To verify the creation of the database, use the following command
 ```
 \l
 ```
@@ -126,11 +118,11 @@ To verify the creation of the database user, use the following command:
 ```
 ![image](https://github.com/user-attachments/assets/0bea53d0-ed81-48ec-a55e-d99ca1ed0f26)
 
-#### 13. To exit the PostgreSQL command-line interface, use the following command:
+#### 7. To exit the PostgreSQL command-line interface, use the following command:
 ```
 \q
 ```
-#### 14.  To return to your non-root sudo user account, use the following command:
+#### 8.  To return to your non-root sudo user account, use the following command:
 ```
 exit
 ```
@@ -138,7 +130,7 @@ exit
 
 
 
-## **Step 7. Downloading and Installing SonarQube**
+## **Step 4. Downloading and Installing SonarQube**
 
 Install the zip utility, required for extracting the SonarQube files
 ```
@@ -148,7 +140,7 @@ sudo apt install zip -y
 
 
 
-## **Step 8. installing the latest version of SonarQube 10.4 Community Edition (free version)**
+## **Step 5. installing the latest version of SonarQube 10.4 Community Edition (free version)**
 
 ```
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip
@@ -157,7 +149,7 @@ sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4
 ![image](https://github.com/user-attachments/assets/e8c2fd40-6589-4f0c-950e-da10bbf989bb)
 
 
-## **Step 9. Move the unzipped files to the /opt/sonarqube directory**
+## **Step 6. Move the unzipped files to the /opt/sonarqube directory**
 
 ```
 sudo unzip sonarqube-10.4.1.88267.zip
@@ -165,7 +157,7 @@ sudo mv sonarqube-10.4.1.88267 sonarqube
 sudo mv sonarqube /opt/
 ```
 
-## **Step 10. Setting Up SonarQube: Adding Group and User**
+## **Step 7. Setting Up SonarQube: Adding Group and User**
 
 ```
 sudo groupadd sona
@@ -175,7 +167,7 @@ sudo useradd -d /opt/sonarqube -g sona sona
 
 
 
-## **Step 11. Grant the “sona” user access to the /opt/sonarqube directory**
+## **Step 8. Grant the “sona” user access to the /opt/sonarqube directory**
 
 ```
 sudo chown -R sona:sona /opt/sonarqube
@@ -185,14 +177,14 @@ sudo chown -R sona:sona /opt/sonarqube
 
 
 
-## **Step 12. Edit the SonarQube configuration file located**
+## **Step 9. Edit the SonarQube configuration file located**
 
 ```
 sudo nano /opt/sonarqube/conf/sonar.properties
 ```
 
 
-## **Step 13. Uncomment the following lines in the SonarQube configuration file**
+## **Step 10. Uncomment the following lines in the SonarQube configuration file**
 
 ```
 sonar.jdbc.username=sona
@@ -202,13 +194,13 @@ sonar.jdbc.url=jdbc:postgresql://localhost:5432/sqube
 ![image](https://github.com/user-attachments/assets/2d051074-3552-45fd-8e2b-5d13b8d45b27)
 
 
-## **Step 14. To edit the SonarQube script file**
+## **Step 11. To edit the SonarQube script file**
 ```
 sudo nano /opt/sonarqube/bin/linux-x86-64/sonar.sh
 ```
 
 
-## **Step 15. Select the branch you want to merge**
+## **Step 12. Select the branch you want to merge**
 
 ```
 RUN_AS_USER=sona
@@ -216,13 +208,13 @@ RUN_AS_USER=sona
 ![image](https://github.com/user-attachments/assets/d74ff63b-e3c0-495b-8f83-5fe514fc4929)
 
 
-## **Step 16. Create a new service file using a text editor**
+## **Step 13. Create a new service file using a text editor**
 ```
 sudo nano /etc/systemd/system/sonar.service
 ```
 
 
-## **Step 17. Check for merge conflicts after creating the pull request, It’s now ready for review**
+## **Step 14. Check for merge conflicts after creating the pull request, It’s now ready for review**
 
 ```
 [Unit]
@@ -244,14 +236,14 @@ WantedBy=multi-user.target
 ![image](https://github.com/user-attachments/assets/af10bcfb-cfdc-4bf1-8015-0304377c063a)
 
 
-## **Step 18. Enable the SonarQube service to start at boot**
+## **Step 15. Enable the SonarQube service to start at boot**
 
 ```
 sudo systemctl enable sonar
 ```
 
 
-## **Step 19. start the SonarQube service**
+## **Step 16. start the SonarQube service**
 
 ```
 sudo systemctl start sonar
@@ -264,14 +256,14 @@ sudo systemctl status sonar
 
 
 
-## **Step 20. To edit the sysctl configuration file**
+## **Step 17. To edit the sysctl configuration file**
 
 ```
 sudo nano /etc/sysctl.conf
 ```
 
 
-## **Step 21. Add the following lines to the sysctl configuration file (/etc/sysctl.conf)**
+## **Step 18. Add the following lines to the sysctl configuration file (/etc/sysctl.conf)**
 
 ```
 vm.max_map_count=262144
@@ -283,63 +275,63 @@ ulimit -u 4096
 ![image](https://github.com/user-attachments/assets/7cfcf710-2856-4438-9e13-bcc278d37d63)
 
 
-## **Step 22. To apply the changes, reboot the system**
+## **Step 19. To apply the changes, reboot the system**
 ```
 sudo reboot
 ```
 
 
-## **Step 23. Access SonarQube in a web browser by entering your server’s IP address followed by port 9000**
+## **Step 20. Access SonarQube in a web browser by entering your server’s IP address followed by port 9000**
 
 ```
 http://100.26.240.39:9000
 ```
-## **Step 24. Log in to SonarQube using the username “admin” and password “admin”**
+## **Step 21. Log in to SonarQube using the username “admin” and password “admin”**
 ![image](https://github.com/user-attachments/assets/aceb6217-a3e7-474d-a903-3f9d3bfbba08)
 
 Once logged in, SonarQube will prompt you to change your password. Enter the current password “admin” and then enter your new password twice as prompted.
 
 ![image](https://github.com/user-attachments/assets/658677aa-d66c-4b3d-8876-0e11ebf9bc6b)
 
-## **Step 25. Go to SonarQube and select the project**
+## **Step 22. Go to SonarQube and select the project**
 
 ![image](https://github.com/user-attachments/assets/170adf86-92c9-48a0-b5b5-af15d1502929)
 
-## **Step 26. Create a Local Project: Set up a new or existing project on your machine**
+## **Step 23. Create a Local Project: Set up a new or existing project on your machine**
 
 ![image](https://github.com/user-attachments/assets/0b49d923-61a7-4120-ae5f-7558dc8c0d3c)
 
-## **Step 27. Configure the Project: Prepare your project for analysis by configuring the necessary files**
+## **Step 24. Configure the Project: Prepare your project for analysis by configuring the necessary files**
 ![image](https://github.com/user-attachments/assets/76d79553-2d6a-41ab-852a-b4ee40d505be)
 
-## **Step 28. Analysis your project which you want**
+## **Step 25. Analysis your project which you want**
 
 ![image](https://github.com/user-attachments/assets/1da40957-0508-43c9-89e7-3916c6dd4feb)
 
-## **Step 29. Generate Token: Create an authentication token in SonarQube**
+## **Step 26. Generate Token: Create an authentication token in SonarQube**
 
 ![image](https://github.com/user-attachments/assets/8a2cc014-c67c-437c-b045-509adb3a0765)
 
-## **Step 30. Copy the Token: Copy the generated SonarQube token to use for authentication when running the SonarScanner**
+## **Step 27. Copy the Token: Copy the generated SonarQube token to use for authentication when running the SonarScanner**
 
 ![image](https://github.com/user-attachments/assets/90fde3fa-0b9e-46bc-9f9f-8e474637e604)
 
-## **Step 31. Analyze your project** 
+## **Step 28. Analyze your project** 
 
 ![image](https://github.com/user-attachments/assets/8b835153-c969-4c89-b066-5789850c98ea)
 
-## **Step 32.Run Analyze on your project**
+## **Step 29.Run Analyze on your project**
 ![image](https://github.com/user-attachments/assets/5ac3feea-4186-4935-a3a7-e41c2dd8eecb)
 
-## **Step 33.Paste the scan command**
+## **Step 30.Paste the scan command**
 
 ![image](https://github.com/user-attachments/assets/2f271634-5d44-421f-b3f3-c6dc526932e3)
 
-## **Step 34. After sucessfully run command**
+## **Step 31. After sucessfully run command**
 
 ![image](https://github.com/user-attachments/assets/900d6aa0-946d-41cf-bb16-4ba997ca5039)
 
-## **Step 35. Result**
+## **Step 32. Result**
 ![image](https://github.com/user-attachments/assets/abcbbf30-ba80-4076-a239-17bf858ef516)
 
 
