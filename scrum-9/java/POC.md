@@ -59,16 +59,30 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 
 ## **Step 3. Update System Packages**
 
-
+>
+>  **Update system**  
+> 👉 **Follow Step 3 here**: [System update Commands](https://github.com/snaatak-Downtime-Crew/Documentation/blob/main/common_stack/operating_system/ubuntu/sop/commoncommands/README.md#1-basic-system-commands)
+>
+> 
 
 ## **Step 4. Java installation**
 
-
+>
+>  **Java installation**  
+> 👉 **Follow Steps here**: [Java installation Commands](https://github.com/snaatak-Downtime-Crew/Documentation/blob/main/common_stack/application/java/installation/script/README.md#bash-script)
+>
+> 
 
 ## **Step 6. Install and configure PostgreSQL**
 
 
-#### 1. Install the start the Postgresql.
+#### 1. Install and start the Postgresql.
+
+>
+>  **Install and start  Postgresql**  
+> 👉 **Follow Steps here**: [Postgresql Commands](https://github.com/snaatak-Downtime-Crew/Documentation/tree/main/common_stack/software/postgresql/installation#step-by-step-setup-guide)
+>
+> 
 
 #### 8. Create a new database user to manage the sqube database
 ```
