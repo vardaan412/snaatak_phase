@@ -39,8 +39,6 @@ This document will guide you through a Proof of Concept (PoC) for setting up Sta
 | **Port** | **Protocol** | **Source Side**    | **Destination Side** | **Use Case**                     |
 |----------|--------------|--------------------|-----------------------|-----------------------------------|
 | 22       | TCP          | Any                | Server               | SSH Access for remote login      |
-| 80       | TCP          | Any                | Server               | HTTP traffic for web applications|
-| 443      | TCP          | Any                | Server               | Secure HTTPS web traffic         |
 | 5432     | TCP          | Application Server | Database Server      | PostgreSQL database access       |
 | 9000     | TCP          | Any                | Server               |  SonarQube |
 
