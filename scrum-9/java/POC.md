@@ -342,13 +342,6 @@ Once logged in, SonarQube will prompt you to change your password. Enter the cur
 ## **Step 35. Result**
 ![image](https://github.com/user-attachments/assets/abcbbf30-ba80-4076-a239-17bf858ef516)
 
- ## **Steps 36. Report** 
-| Link         | Description         |
-|--------------|------------------------|
-| [Artifact](https://github.com/avengers-p11/Documentation/blob/main/Application%20CI%20Design/Java%20CI%20Checks/Bugs%20Analysis/salary-0.1.0-RELEASE.jar.original)           |File |
-| [SCA](https://github.com/avengers-p11/Documentation/blob/main/Application%20CI%20Design/Java%20CI%20Checks/Unit%20Testing%20/report)| Report |
-#
-
 
 
 # **Conclusion**
