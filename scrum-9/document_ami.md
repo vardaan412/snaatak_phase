@@ -63,8 +63,8 @@ Using AMIs eliminates repetitive setup steps and ensures:
 ## **POC**
 
 > **NOTE:**  
-> We are using the Attendance API for this setup.  
-> Refer to its [Attendance API official GitHub repository](https://github.com/your-org/attendance-api) for installation and usage instructions.
+> We have fully set up the Attendance API on the EC2 instance and created its Golden AMI as per the official process.  
+> Refer to the official POC documentation for complete steps: [Attendance AMI Official POC](https://github.com/vardaan412/snaatak_phase/blob/main/scrum-9/AMI.md?plain=1) 
 
 
 
@@ -94,10 +94,11 @@ Amazon Machine Images offer a scalable and efficient way to provision cloud infr
 
 ## **References**
 
-| Description                | Link                                                                             |
-| -------------------------- | -------------------------------------------------------------------------------- |
-| AWS AMI Documentation      | [Link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)            |
-| Create AMI in AWS          | [Link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami.html) |
-| Amazon EC2 Getting Started | [Link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)  |
+| Description                | Link                                                                                      |
+|---------------------------|-------------------------------------------------------------------------------------------|
+| **AWS AMI Documentation**      | [AWS AMI Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)            |
+| **Create AMI in AWS**          | [Create AMI in AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami.html)     |
+| **Amazon EC2 Getting Started** | [Amazon EC2 Getting Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) |
+
 
 
