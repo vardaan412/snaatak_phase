@@ -7,7 +7,7 @@
 
 | Created     | Last updated | Version | Author         | Comment | Reviewer |
 |-------------|-----------|---------|----------------|---------|----------|
-| 12-05-2025  | 12-05-2025 | V1.0  | Vardaan Saxena |     Internal Review    | Pritam    |
+| 12-05-2025  |  | V1.0  | Vardaan Saxena |     Internal Review    | Pritam    |
 
 
 ## **Table of Contents**
@@ -46,6 +46,9 @@ Using AMIs eliminates repetitive setup steps and ensures:
 
 ## **Workflow Diagram**
 
+<div align="center">
+  <img src="https://github.com/vardaan412/snaatak_phase/blob/a1282171d06b68d76c18f2b5c6f997c160dc2391/AMI/ChatGPT%20Image%20May%2013%2C%202025%2C%2009_20_41%20PM.png" width="70%"/>
+</div>
 
 
 ## **Advantages**
@@ -63,7 +66,7 @@ Using AMIs eliminates repetitive setup steps and ensures:
 > We are using the Attendance API for this setup.  
 > Refer to its [Attendance API official GitHub repository](https://github.com/your-org/attendance-api) for installation and usage instructions.
 
-![Screenshot 2024-09-23 164450](https://github.com/vardaan412/snaatak_phase/blob/ed673dfb612baabc6bec328ddeed49959bfbcdf3/AMI/1.png)
+
 
 ## **Best Practices**
 
