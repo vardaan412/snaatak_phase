@@ -9,7 +9,7 @@
 | 14-05-2025  |  | V1.0  | Vardaan Saxena |     Internal Review    | Pritam    |
 
 
-## Table of Contents
+# **Table of Contents**
 1. [Introduction](#introduction)
 2. [What is Static Code Analysis?](#what-is-static-code-analysis)
 3. [Why Use Static Code Analysis?](#why-use-static-code-analysis)
@@ -22,13 +22,13 @@
 11. [Contact Information](#contact-information)
 12. [References](#references)
 
-## Introduction
+# **Introduction**
 Static code analysis is a method of debugging that analyzes source code before it runs. In Java development, static analysis plays a crucial role in identifying potential errors, enforcing coding standards, and improving overall code quality.
 
-##  What is Static Code Analysis?
+#  **What is Static Code Analysis?**
 Static code analysis involves examining the source code of a program without executing it. This analysis is performed by tools that scan the codebase to find potential issues, such as syntax errors, bugs, security vulnerabilities, and observation to coding standards. Unlike dynamic analysis, which evaluates the program during execution, static analysis helps developers catch problems early in the development cycle.
 
-## Why Use Static Code Analysis?
+# **Why Use Static Code Analysis?**
 | Feature                         | Description                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------|
 | Early Detection of Issues       | Identifies problems in code before it is executed, helping to address issues early.        |
@@ -38,7 +38,7 @@ Static code analysis involves examining the source code of a program without exe
 | Automates Code Reviews          | Provides a consistent and automated way to perform code reviews.                            |
 
 
-## Different Tools for Static Code Analysis in Java
+# **Different Tools for Static Code Analysis in Java**
 Several tools are available for static code analysis in Java, each with unique features and strengths. Some popular ones include:
 
 - **1. SonarQube**
@@ -48,7 +48,7 @@ Several tools are available for static code analysis in Java, each with unique f
 
 
 
-## Comparison of Static Code Analysis Tools
+# **Comparison of Static Code Analysis Tools**
 | Feature                        | SonarQube                                    | PMD                                 | Checkstyle                          | FindBugs/SpotBugs                  |
 |--------------------------------|----------------------------------------------|-------------------------------------|-------------------------------------|-------------------------------------|
 | **Purpose**                    | Comprehensive code quality management tool   | Code smells for Java       | Static code analysis for Java        | Bug detection and static analysis    |
@@ -58,7 +58,7 @@ Several tools are available for static code analysis in Java, each with unique f
 | **Focus Areas**                | Code quality, security, maintainability      | Code complexity, best practices     | Code formatting and style guidelines | Bug patterns and potential issues   |
 
 
-## Advantages of Static Code Analysis
+# **Advantages of Static Code Analysis**
 | Benefit                        | Description                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
 | **Cost-Effective**            | Reduces the cost associated with fixing error later in the development cycle. |
@@ -66,20 +66,15 @@ Several tools are available for static code analysis in Java, each with unique f
 | **Consistent**                | Provides a uniform approach to code quality across teams.                 |
 | **Increased Maintainability**| Promotes cleaner code which is easier to maintain and extend.           |
 
-## Disadvantages of Static Code Analysis
-| **Aspect**                     | **Description**                                                                                         |
-|--------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Limited Context Understanding** | These tools might not always catch problems in the code because they don’t fully understand the context. This means some issues might only show up when the code is actually running or in certain situations. |
-| **Lack of Runtime Testing**    | Static analysis cannot detect runtime issues, such as memory leaks that only occur during execution. |
-| **Code Complexity**            | When code is very complicated or uses tricky patterns, static analysis tools might get confused |
-| **Maintenance Challenges**      | If they’re not updated, the tools might miss new issues or irrelevant findings. |
+
+# **Proof of Concept (POC)**
+
+> **NOTE:**   
+> We are using **SalaryAPI** for Java static code analysis.  
+> Refer to the official POC documentation for complete steps: [Static code analysis POC](https://github.com/vardaan412/snaatak_phase/blob/main/scrum-9/AMI.md?plain=1) 
 
 
-## Proof of Concept (POC)
-
-Please Refer this https://github.com/mygurukulam-p10/Documention/blob/main/Application%20CI%20Design/Java%20CI%20checks/Static%20Code%20Analysis%20POC/readme.md
-
-## Best Practices
+# **Best Practices**
 | Best Practice                 | Description                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
 | **Integrate Early**           | Start static analysis early in the development cycle to catch issues sooner. |
@@ -89,17 +84,22 @@ Please Refer this https://github.com/mygurukulam-p10/Documention/blob/main/Appli
 
 
 
-# Conclusion
+# **Conclusion**
 In conclusion, static code analysis is a valuable tool in the software development process, offering benefits such as improved code quality and adherence to coding standards.  
 We are using **SonarQube** in our project because it effectively enhances code quality, improves maintainability, and fosters a consistent coding culture within the team.
+
+#  **Contact Information**
 
 | Name           | Email Address                                                                         |
 | -------------- | ------------------------------------------------------------------------------------- |
 | Vardaan Saxena | [vardaan.saxena.snaatak@mygurukulam.co](mailto:vardaan.saxena.snaatak@mygurukulam.co) |
 
 
-# References
-| Links | Descriptions|
-|------|---------------------|
-|  https://checkstyle.sourceforge.io/ | Checkstyle |
-|https://www.bitshifted.co/blog/java-static-code-analysis-tools/ |Static Code Analysis Tools|
+
+# **References**
+
+| **Description**                 | **Link**                                                              |
+|--------------------------------|------------------------------------------------------------------------|
+| Checkstyle                     | https://checkstyle.sourceforge.io/                                     |
+| Static Code Analysis Tools     | https://www.bitshifted.co/blog/java-static-code-analysis-tools/        |
+
