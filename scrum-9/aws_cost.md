@@ -53,7 +53,7 @@ These tools together help organizations monitor financial metrics and take preve
 # **Workflow Diagram**
 
 <div align="center">
-  <img src="https://blog.mirrorreview.com/wp-content/uploads/2022/03/Cloud-Architect.jpg" width="40%"/>
+  <img src="https://github.com/vardaan412/snaatak_phase/blob/332304a9870bd50cfcbc6e59eff329a2b2b46811/scrum-9/ami_images/Budjet.png" width="60%"/>
 </div>
 
 
