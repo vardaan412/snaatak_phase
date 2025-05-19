@@ -12,8 +12,8 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [What is DAST?](#what-is-dast)
-3. [Why DAST?](#why-dast)
+2. [What is DAST?](#what-is-dast?)
+3. [Why DAST?](#why-dast?)
 4. [Different Tools for DAST](#different-tools-for-dast)
 5. [Comparison of DAST Tools](#comparison-of-dast-tools)
 6. [Advantages of DAST](#advantages-of-dast)
@@ -26,10 +26,10 @@
 # **Introduction**
 This guide explains how to implement Dynamic Application Security Testing (DAST) in Python CI pipelines using OWASP ZAP, helping automate security checks during development.
 
-# **What is DAST ?**
+# **What is DAST?**
 Dynamic Application Security Testing (DAST) is a black-box testing method where an application is tested from the outside by examining exposed interfaces and inputs to find vulnerabilities. It involves simulating attacks on a running application to identify security flaws that could be exploited by real attackers.
 
-# **Why DAST ?**
+# **Why DAST?**
 
 | **Reason**                     | **Description**                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------|
